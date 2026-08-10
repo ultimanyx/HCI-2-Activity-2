@@ -1,53 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MOIST Student Registration System</title>
     <!-- Members
          Daneil Benidict B. Ellevera
          Felix Cagampang
          Jael Jonathan Juson Camocamo 
     -->
-
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-            <h1>MOIST Student Registration System</h1>
-            <p class="subhead">
-                A simple online registration page where students can enter their information and view sample student records.
-            </p>
+      <h1>MOIST Student Registration System</h1>
+      <p class="subhead">
+        A simple online registration page where students can enter their
+        information and view sample student records.
+      </p>
     </header>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#registration">Registration</a>
-        <a href="#students">Student List</a>
-        <a href="#enrollment_sum">Enrollment Summary</a>
-        <a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#registration">Registration</a>
+      <a href="#students">Student List</a>
+      <a href="#enrollment_sum">Enrollment Summary</a>
+      <a href="#contact">Contact</a>
     </nav>
-        
-    <form action="">
-        <label for="fullname">Full Name</label>
-        <input type="text" name="fullname" id="fullname" placeholder="John Doe" required> <br><br>
 
-        <label for="email">Email Address</label>
-        <input type="email"  name="email" id="email" placeholder="JohnDoe@gmail.com" required> <br><br>
+    <!-- Registration Section -->
+    <section id="registration">
+      <h2>Student Registration</h2>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="•••••••" required><br><br>
+      <p>Enter your information in the form below.</p>
 
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age" placeholder="19" required><br><br>
+      <form>
+        <!-- Full Name -->
+        <p>
+          <label for="fullname">Full Name:</label>
+          <br />
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your complete name"required/>
+        </p>
 
-        <label for="birthdate">BirthDate</label>
-        <input type="date" name="birthdate" id="birthdate" required>
+        <!-- Email -->
+        <p>
+          <label for="email">Email Address:</label>
+          <br />
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required/>
+        </p>
 
-        <label for="gender">Gender</label>
-        <input type="radio" name="gender" id="gender" required>
-        
-    </form>
+        <!-- Password -->
+        <p>
+          <label for="password">Password:</label>
+          <br />
+          <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+        </p>
 
-</body>
+        <!-- Age -->
+        <p>
+          <label for="age">Age:</label>
+          <br />
+          <input type="number" id="age" name="age" placeholder="Enter your age" value="18"/>
+        </p>
+
+        <!-- Birthdate -->
+        <p>
+          <label for="birthdate">Birthdate:</label>
+          <br />
+          <input type="date" id="birthdate" name="birthdate" />
+        </p>
+
+        <!-- Gender -->
+        <p>
+          <label>Gender:</label>
+          <br />
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label>
+
+          <br />
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+
+          <br />
+
+          <input type="radio" id="prefer" name="gender" value="Prefer not to say"/>
+
+          <label for="prefer">Prefer not to say</label>
+        </p>
+
+        <!-- Course -->
+        <p>
+          <label for="course">Course:</label>
+          <br />
+
+          <select id="course" name="course" required>
+            <option value=""> Select Course </option>
+            <option value="BSIT">BS Information Technology</option>
+            <option value="BSTM">BS Tourism Management</option>
+            <option value="BSED">Bachelor of Secondary Education</option>
+            <option value="BEED">Bachelor of Elementary Education</option>
+          </select>
+        </p>
+
+        <!-- Year Level -->
+        <p>
+          <label>Year Level:</label>
+          <br />
+
+          <input type="radio" id="first" name="yearlevel" value="First Year"required/>
+          <label for="first">First Year</label>
+
+          <br />
+
+          <input type="radio" id="second"  name="yearlevel" value="Second Year"/>
+          <label for="second">Second Year</label>
+
+          <br />
+
+          <input type="radio" id="third" name="yearlevel" value="Third Year" />
+          <label for="third">Third Year</label>
+
+          <br />
+
+          <input type="radio" id="fourth" name="yearlevel" value="Fourth Year" />
+          <label for="fourth">Fourth Year</label>
+        </p>
+
+        <!-- Skills or Interests -->
+        <p>
+          <label>Skills or Interests:</label>
+          <br/>
+
+          <input type="checkbox" id="html" name="skills" value="HTML" />
+          <label for="html">HTML</label>
+
+          <br/>
+
+          <input type="checkbox" id="css" name="skills" value="CSS" />
+          <label for="css">CSS</label>
+
+          <br />
+
+          <input type="checkbox" id="javascript" name="skills" value="JavaScript"/>
+          <label for="javascript">JavaScript</label>
+
+          <br />
+
+          <input type="checkbox" id="graphic" name="skills" value="Graphic Design"/>
+          <label for="graphic">Graphic Design</label>
+          <br />
+
+          <input type="checkbox" id="networking" name="skills" value="Networking"/>
+          <label for="networking">Networking</label>
+        </p>
+
+        <!-- Address -->
+        <p>
+          <label for="address">Address:</label>
+          <br />
+
+          <textarea id="address" name="address" placeholder="Enter your address" rows="4"cols="40"></textarea>
+        </p>
+
+        <!-- Comments -->
+        <p>
+          <label for="comments">Comments or Expectations:</label>
+          <br />
+
+          <textarea id="comments" name="comments" placeholder="Enter your comments or expectations" rows="4" cols="40"></textarea>
+        </p>
+
+        <!-- Buttons -->
+        <p>
+          <button type="submit">Submit Registration</button>
+          <button type="reset">Clear Form</button>
+          <button type="button">View Requirements</button>
+        </p>
+      </form>
+    </section>
+
+    
+  </body>
 </html>
