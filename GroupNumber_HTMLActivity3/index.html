@@ -11,7 +11,7 @@
          Jael Jonathan Juson Camocamo Jr.
     -->
   </head>
-  <body style="margin: 0; padding: 0">
+  <body style="margin: 0; padding: 0; background-color: #e7e3e3;">
     <header
       style="
         padding: 70px;
@@ -69,11 +69,13 @@
     <!-- Registration div -->
     <div id="registration"  style="  
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 20px; ">
-      <h2>Student Registration</h2>
+    <div style="text-align: center; border-bottom: #a31014 solid 2px;font-size: larger;">
+      <h2 style="font-weight: bold;margin-bottom: -10px;">Student Registration</h2>
 
-      <p>Enter your information in the form below.</p>
+      <p style="margin-bottom: 20px;">Enter your information in the form below.</p>
+    </div>
 
       <form>
         <!-- Full Name -->
@@ -319,7 +321,7 @@
         </div>
 
         <!-- Comments -->
-        <div style="margin-top: 10px;font-size: large;">
+        <div style="margin-top: 10px;font-size: large;padding-bottom: 25px;">
           <label for="comments" style="font-weight: bold">Comments or Expectations:</label>
           <br />
 
@@ -333,7 +335,7 @@
         </div>
 
         <!-- Buttons -->
-        <div style="display: flex; gap: 12px;">
+        <div style="display: flex; gap: 12px;border-top: #a31014 solid 2px; padding: 10px 0;">
           <button type="submit" 
         style="
         flex: 1;
@@ -371,71 +373,112 @@
         </div>
       </form>
     </div>
+    </div>
 
     <!-- Student List div -->
-     <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
+    <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
     <div id="students" style="  
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 20px;">
-      <h2>Student List</h2>
+
+    <div style="text-align: center; border-bottom: #a31014 solid 2px;font-size: larger;">
+      <h2 style="font-weight: bold;margin-bottom: -10px;margin-top:  5px;">Student List</h2>
 
       <p>Below are sample registered student records.</p>
-
-      <table border="1">
+    </div>
+      <table border="1"  
+      style="margin: 10px auto;
+      border-collapse: collapse;
+      width: 100%;">
         <caption>
           Registered Student Records
         </caption>
 
         <thead>
           <tr>
-            <th>Student Number</th>
-            <th>Full Name</th>
-            <th>Course</th>
-            <th>Year Level</th>
-            <th>Status</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Student Number</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Full Name</th>
+            <th style="text-align: left;
+  padding: 8px; background-color: #a31014;
+  color: white;">Course</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Year Level</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Status</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>2026-0001</td>
-            <td>Juan Jael Dela Cruz</td>
-            <td>BSIT</td>
-            <td>First Year</td>
-            <td>Registered</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">2026-0001</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Juan Jael Dela Cruz</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">BSIT</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">First Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Registered</td>
           </tr>
 
           <tr>
-            <td>2026-0002</td>
-            <td>Maria Santos Jonathan</td>
-            <td>BSTM</td>
-            <td>Second Year</td>
-            <td>Registered</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">2026-0002</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Maria Santos Jonathan</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">BSTM</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Second Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Registered</td>
           </tr>
 
           <tr>
-            <td>2026-0003</td>
-            <td>Pedro Reyes</td>
-            <td>BSED</td>
-            <td>Third Year</td>
-            <td>Registered</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">2026-0003</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Pedro Reyes</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">BSED</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Third Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Registered</td>
           </tr>
 
           <tr>
-            <td>2026-0004</td>
-            <td>Anna Garcia</td>
-            <td>BEED</td>
-            <td>Fourth Year</td>
-            <td>Registered</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">2026-0004</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Anna Garcia</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">BEED</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Fourth Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Registered</td>
           </tr>
 
           <tr>
-            <td>2026-0005</td>
-            <td>Jael Camocamo</td>
-            <td>BSIT</td>
-            <td>Second Year</td>
-            <td>Registered</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">2026-0005</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Jael Camocamo</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">BSIT</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Second Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Registered</td>
           </tr>
         </tbody>
       </table>
@@ -444,51 +487,78 @@
 
     
     <!-- Enrollment Summary div -->
-    <div id="enrollment_sum">
-      <h2>Enrollment Summary</h2>
+    <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
+    <div id="enrollment_sum" style="  
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;">
+    <div style="text-align: center; border-bottom: #a31014 solid 2px;font-size: larger;">
+      <h2 style="font-weight: bold;margin-bottom: -10px;margin-top:  5px;">Enrollment Summary</h2>
 
       <p>Below is the sample enrollment information.</p>
+    </div>
 
-      <table border="1">
+      <table border="1"
+      style="margin: 10px auto;
+      border-collapse: collapse;
+      width: 100%;"
+      >
         <caption>
           Student Enrollment Summary
         </caption>
 
         <thead>
           <tr>
-            <th>Course</th>
-            <th>Number of Students</th>
-            <th>Enrollment Status</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Course</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Number of Students</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Enrollment Status</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>BSIT</td>
-            <td>35</td>
-            <td>Open</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">BSIT</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">35</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Open</td>
           </tr>
 
           <tr></tr>
 
           <tr>
-            <td>BSTM</td>
-            <td>25</td>
-            <td>Open</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">BSTM</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">25</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Open</td>
           </tr>
 
           <tr>
-            <td>BSED</td>
-            <td>30</td>
-            <td>Open</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">BSED</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">30</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Open</td>
           </tr>
         </tbody>
       </table>
     </div>
+    </div>
 
     <!-- Contact div -->
-    <div id="contact">
-      <h2>Contact</h2>
+    <div id="contact" style="background-color: white;padding: 20px;margin-top: 25px ;border-top-left-radius: 20px;border-top-right-radius: 20px;">
+        <div style="text-align: center; margin: 5px 0;">
+      <h2 style="color: #a31014;">Contact Us</h2>
 
       <p>
         For questions about registration, contact the MOIST Student Registration
@@ -501,10 +571,10 @@
     </div>
     </div>
 
+
     <!-- Footer -->
-    <hr />
-    <footer>
-      <p>&copy; 2026 MOIST Student Registration System. All rights reserved.</p>
+    <footer style="background-color: white;padding: 2px;margin: 0;border-top:rgb(192, 188, 188) solid 1px ;">
+      <p style="text-align: center;color: rgb(73, 71, 71);">&copy; 2026 MOIST Student Registration System. All rights reserved.</p>
     </footer>
 
   </body>
