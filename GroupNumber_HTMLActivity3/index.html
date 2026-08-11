@@ -66,7 +66,7 @@
     </nav>
 
      <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
-    <!-- Registration Section -->
+    <!-- Registration div -->
     <div id="registration"  style="  
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -77,7 +77,7 @@
 
       <form>
         <!-- Full Name -->
-        <p>
+        <div style="margin-top:10px;font-size: large;">
           <label for="fullname" style="font-weight: bold;">Full Name:</label>
           <br />
           <input
@@ -94,11 +94,11 @@
             border-radius: 4px;
             box-sizing: border-box;"
           />
-        </p>
+        </div>
 
         <!-- Email -->
-        <p>
-          <label for="email" style="font-weight: bold;">Email Address:</label>
+        <div style="margin-top:10px;font-size: large;">
+          <label for="email" style="font-weight: bold;" >Email Address:</label>
           <br />
           <input
             type="email"
@@ -114,10 +114,10 @@
             border-radius: 4px;
             box-sizing: border-box;"
           />
-        </p>
+        </div>
 
         <!-- Password -->
-        <p>
+        <div style="margin-top:10px;font-size: large;">
           <label for="password" style="font-weight: bold;">Password:</label>
           <br />
           <input
@@ -134,10 +134,10 @@
             border-radius: 4px;
             box-sizing: border-box;"
           />
-        </p>
+        </div>
 
         <!-- Age -->
-        <p>
+        <div style="margin-top:10px;font-size: large;" >
           <label for="age" style="font-weight: bold;">Age:</label>
           <br />
           <input
@@ -153,19 +153,29 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;"
+
           />
-        </p>
+        </div>
 
         <!-- Birthdate -->
-        <p>
+        <div style="margin-top:10px;font-size: large;">
           <label for="birthdate" style="font-weight: bold;">Birthdate:</label>
           <br />
-          <input type="date" id="birthdate" name="birthdate" style="display: inline-block;"/>
-        </p>
+          <input type="date" id="birthdate" name="birthdate"
+          style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;" />
+        </div>
 
         <!-- Gender -->
-        <p>
+        <div style="font-size: medium;margin-top:10px;font-size: large;">
+            <div style="padding: 5px;">
           <label style="font-weight: bold;">Gender:</label>
+       
           <br />
           <input type="radio" id="male" name="gender" value="Male" />
           <label for="male">Male</label>
@@ -184,24 +194,35 @@
           />
 
           <label for="prefer">Prefer not to say</label>
-        </p>
+        </div>
+        </div>
 
         <!-- Course -->
-        <p>
+        <div style="margin-top: 10px;font-size: large;" >
           <label for="course" style="font-weight: bold;">Course:</label>
           <br />
 
-          <select id="course" name="course" required>
+          <select id="course" name="course" required 
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
+            >
+
             <option value="">Select Course</option>
             <option value="BSIT">BS Information Technology</option>
             <option value="BSTM">BS Tourism Management</option>
             <option value="BSED">Bachelor of Secondary Education</option>
             <option value="BEED">Bachelor of Elementary Education</option>
+
           </select>
-        </p>
+        </div>
 
         <!-- Year Level -->
-        <p>
+        <div style="margin-top: 10px;font-size: large;">
           <label style="font-weight: bold;">Year Level:</label>
           <br />
 
@@ -238,10 +259,10 @@
             value="Fourth Year"
           />
           <label for="fourth">Fourth Year</label>
-        </p>
+        </div>
 
         <!-- Skills or Interests -->
-        <p>
+        <div style="margin-top: 10px;font-size: large;">
           <label style="font-weight: bold;">Skills or Interests:</label>
           <br />
 
@@ -281,11 +302,11 @@
             value="Networking"
           />
           <label for="networking">Networking</label>
-        </p>
+        </div>
 
         <!-- Address -->
-        <p>
-          <label for="address">Address:</label>
+        <div style="margin-top: 10px;font-size: large;">
+          <label for="address" style="font-weight: bold">Address:</label>
           <br />
 
           <textarea
@@ -295,11 +316,11 @@
             rows="4"
             cols="40"
           ></textarea>
-        </p>
+        </div>
 
         <!-- Comments -->
-        <p>
-          <label for="comments">Comments or Expectations:</label>
+        <div style="margin-top: 10px;font-size: large;">
+          <label for="comments" style="font-weight: bold">Comments or Expectations:</label>
           <br />
 
           <textarea
@@ -309,19 +330,54 @@
             rows="4"
             cols="40"
           ></textarea>
-        </p>
+        </div>
 
         <!-- Buttons -->
-        <p>
-          <button type="submit">Submit Registration</button>
-          <button type="reset">Clear Form</button>
-          <button type="button">View Requirements</button>
-        </p>
+        <div style="display: flex; gap: 12px;">
+          <button type="submit" 
+        style="
+        flex: 1;
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"
+          >Submit Registration</button>
+          <button type="reset" 
+        style="
+        flex: 1;
+        width: 100%;
+        background-color: #c42b26;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"
+          >Clear Form</button>
+          <button type="button" style="
+        flex: 1;  
+        width: 100%;
+        background-color: #1749d1;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;">View Requirements</button>
+        </div>
       </form>
-    </section>
+    </div>
 
-    <!-- Student List Section -->
-    <section id="students">
+    <!-- Student List div -->
+     <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
+    <div id="students" style="  
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;">
       <h2>Student List</h2>
 
       <p>Below are sample registered student records.</p>
@@ -383,10 +439,12 @@
           </tr>
         </tbody>
       </table>
-    </section>
+    </div>
+    </div>
 
-    <!-- Enrollment Summary Section -->
-    <section id="enrollment_sum">
+    
+    <!-- Enrollment Summary div -->
+    <div id="enrollment_sum">
       <h2>Enrollment Summary</h2>
 
       <p>Below is the sample enrollment information.</p>
@@ -428,8 +486,8 @@
       </table>
     </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Contact div -->
+    <div id="contact">
       <h2>Contact</h2>
 
       <p>
@@ -440,7 +498,7 @@
       <p>Email: registration@moist.edu.ph</p>
 
       <p>Phone: (088) 123-4567</p>
-    </section>
+    </div>
     </div>
 
     <!-- Footer -->
