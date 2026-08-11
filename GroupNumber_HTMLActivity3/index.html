@@ -10,10 +10,18 @@
          Felix V. Cagampang Jr.
          Jael Jonathan Juson Camocamo Jr.
     -->
-
   </head>
-  <body>
-    <header>
+  <body style="margin: 0; padding: 0">
+    <header
+      style="
+        padding: 70px;
+        margin: 0 0;
+        text-align: center;
+        background-color: #a31014;
+        color: whitesmoke;
+        font-size: 22px;
+      "
+    >
       <h1>MOIST Student Registration System</h1>
       <p class="subhead">
         A simple online registration page where students can enter their
@@ -21,16 +29,48 @@
       </p>
     </header>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#registration">Registration</a>
-      <a href="#students">Student List</a>
-      <a href="#enrollment_sum">Enrollment Summary</a>
-      <a href="#contact">Contact</a>
+    <nav
+      style="
+        list-style-type: none;
+        margin: 0;
+        padding: 15px;
+        overflow: hidden;
+        background-color: #333333;
+      "
+    >
+      <a
+        href="#home"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Home</a
+      >
+      <a
+        href="#registration"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Registration</a
+      >
+      <a
+        href="#students"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Student List</a
+      >
+      <a
+        href="#enrollment_sum"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Enrollment Summary</a
+      >
+      <a
+        href="#contact"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Contact</a
+      >
     </nav>
 
+     <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
     <!-- Registration Section -->
-    <section id="registration">
+    <div id="registration"  style="  
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px; ">
       <h2>Student Registration</h2>
 
       <p>Enter your information in the form below.</p>
@@ -38,7 +78,7 @@
       <form>
         <!-- Full Name -->
         <p>
-          <label for="fullname">Full Name:</label>
+          <label for="fullname" style="font-weight: bold;">Full Name:</label>
           <br />
           <input
             type="text"
@@ -46,12 +86,19 @@
             name="fullname"
             placeholder="Enter your complete name"
             required
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
           />
         </p>
 
         <!-- Email -->
         <p>
-          <label for="email">Email Address:</label>
+          <label for="email" style="font-weight: bold;">Email Address:</label>
           <br />
           <input
             type="email"
@@ -59,12 +106,19 @@
             name="email"
             placeholder="Enter your email address"
             required
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
           />
         </p>
 
         <!-- Password -->
         <p>
-          <label for="password">Password:</label>
+          <label for="password" style="font-weight: bold;">Password:</label>
           <br />
           <input
             type="password"
@@ -72,12 +126,19 @@
             name="password"
             placeholder="Enter your password"
             required
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
           />
         </p>
 
         <!-- Age -->
         <p>
-          <label for="age">Age:</label>
+          <label for="age" style="font-weight: bold;">Age:</label>
           <br />
           <input
             type="number"
@@ -85,19 +146,26 @@
             name="age"
             placeholder="Enter your age"
             value="18"
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
           />
         </p>
 
         <!-- Birthdate -->
         <p>
-          <label for="birthdate">Birthdate:</label>
+          <label for="birthdate" style="font-weight: bold;">Birthdate:</label>
           <br />
-          <input type="date" id="birthdate" name="birthdate" />
+          <input type="date" id="birthdate" name="birthdate" style="display: inline-block;"/>
         </p>
 
         <!-- Gender -->
         <p>
-          <label>Gender:</label>
+          <label style="font-weight: bold;">Gender:</label>
           <br />
           <input type="radio" id="male" name="gender" value="Male" />
           <label for="male">Male</label>
@@ -120,7 +188,7 @@
 
         <!-- Course -->
         <p>
-          <label for="course">Course:</label>
+          <label for="course" style="font-weight: bold;">Course:</label>
           <br />
 
           <select id="course" name="course" required>
@@ -134,7 +202,7 @@
 
         <!-- Year Level -->
         <p>
-          <label>Year Level:</label>
+          <label style="font-weight: bold;">Year Level:</label>
           <br />
 
           <input
@@ -174,7 +242,7 @@
 
         <!-- Skills or Interests -->
         <p>
-          <label>Skills or Interests:</label>
+          <label style="font-weight: bold;">Skills or Interests:</label>
           <br />
 
           <input type="checkbox" id="html" name="skills" value="HTML" />
@@ -317,57 +385,48 @@
       </table>
     </section>
 
-        <!-- Enrollment Summary Section -->
+    <!-- Enrollment Summary Section -->
     <section id="enrollment_sum">
+      <h2>Enrollment Summary</h2>
 
-        <h2>Enrollment Summary</h2>
+      <p>Below is the sample enrollment information.</p>
 
-        <p>
-            Below is the sample enrollment information.
-        </p>
+      <table border="1">
+        <caption>
+          Student Enrollment Summary
+        </caption>
 
-        <table border="1">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Number of Students</th>
+            <th>Enrollment Status</th>
+          </tr>
+        </thead>
 
-            <caption>
-                Student Enrollment Summary
-            </caption>
+        <tbody>
+          <tr>
+            <td>BSIT</td>
+            <td>35</td>
+            <td>Open</td>
+          </tr>
 
-            <thead>
-                <tr>
-                    <th>Course</th>
-                    <th>Number of Students</th>
-                    <th>Enrollment Status</th>
-                </tr>
-            </thead>
+          <tr></tr>
 
-            <tbody>
+          <tr>
+            <td>BSTM</td>
+            <td>25</td>
+            <td>Open</td>
+          </tr>
 
-                <tr>
-                    <td>BSIT</td>
-                    <td>35</td>
-                    <td>Open</td>
-                </tr>
-
-                <tr>
-               
-
-                <tr>
-                    <td>BSTM</td>
-                    <td>25</td>
-                    <td>Open</td>
-                </tr>
-
-                <tr>
-                    <td>BSED</td>
-                    <td>30</td>
-                    <td>Open</td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </section>
+          <tr>
+            <td>BSED</td>
+            <td>30</td>
+            <td>Open</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -382,11 +441,13 @@
 
       <p>Phone: (088) 123-4567</p>
     </section>
+    </div>
 
     <!-- Footer -->
-     <hr>
+    <hr />
     <footer>
       <p>&copy; 2026 MOIST Student Registration System. All rights reserved.</p>
     </footer>
+
   </body>
 </html>
