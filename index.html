@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOIST Student Registration System</title>
+
+    <!-- Members
+         Daneil Benidict B. Ellevera
+         Felix V. Cagampang Jr.
+         Jael Jonathan Juson Camocamo Jr.
+    -->
+  </head>
+  <body style="margin: 0; padding: 0; background-color: #e7e3e3;">
+    <header
+      style="
+        padding: 70px;
+        margin: 0 0;
+        text-align: center;
+        background-color: #a31014;
+        color: whitesmoke;
+        font-size: 22px;
+      "
+    >
+      <h1>MOIST Student Registration System</h1>
+      <p class="subhead">
+        A simple online registration page where students can enter their
+        information and view sample student records.
+      </p>
+    </header>
+
+    <nav
+      style="
+        list-style-type: none;
+        margin: 0;
+        padding: 15px;
+        overflow: hidden;
+        background-color: #333333;
+      "
+    >
+      <a
+        href="#home"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Home</a
+      >
+      <a
+        href="#registration"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Registration</a
+      >
+      <a
+        href="#students"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Student List</a
+      >
+      <a
+        href="#enrollment_sum"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Enrollment Summary</a
+      >
+      <a
+        href="#contact"
+        style="color: whitesmoke; text-decoration: none; padding: 0 6px"
+        >Contact</a
+      >
+    </nav>
+
+     <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
+    <!-- Registration div -->
+    <div id="registration"  style="  
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px; ">
+    <div style="text-align: center; border-bottom: #a31014 solid 2px;font-size: larger;">
+      <h2 style="font-weight: bold;margin-bottom: -10px;">Student Registration</h2>
+
+      <p style="margin-bottom: 20px;">Enter your information in the form below.</p>
+    </div>
+
+      <form>
+        <!-- Full Name -->
+        <div style="margin-top:10px;font-size: large;">
+          <label for="fullname" style="font-weight: bold;">Full Name:</label>
+          <br />
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your complete name"
+            required
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
+          />
+        </div>
+
+        <!-- Email -->
+        <div style="margin-top:10px;font-size: large;">
+          <label for="email" style="font-weight: bold;" >Email Address:</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
+          />
+        </div>
+
+        <!-- Password -->
+        <div style="margin-top:10px;font-size: large;">
+          <label for="password" style="font-weight: bold;">Password:</label>
+          <br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
+          />
+        </div>
+
+        <!-- Age -->
+        <div style="margin-top:10px;font-size: large;" >
+          <label for="age" style="font-weight: bold;">Age:</label>
+          <br />
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+            value="18"
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
+
+          />
+        </div>
+
+        <!-- Birthdate -->
+        <div style="margin-top:10px;font-size: large;">
+          <label for="birthdate" style="font-weight: bold;">Birthdate:</label>
+          <br />
+          <input type="date" id="birthdate" name="birthdate"
+          style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;" />
+        </div>
+
+        <!-- Gender -->
+        <div style="font-size: medium;margin-top:10px;font-size: large;">
+            <div style="padding: 5px;">
+          <label style="font-weight: bold;">Gender:</label>
+       
+          <br />
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label>
+
+          <br />
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+
+          <br />
+
+          <input
+            type="radio"
+            id="prefer"
+            name="gender"
+            value="Prefer not to say"
+          />
+
+          <label for="prefer">Prefer not to say</label>
+        </div>
+        </div>
+
+        <!-- Course -->
+        <div style="margin-top: 10px;font-size: large;" >
+          <label for="course" style="font-weight: bold;">Course:</label>
+          <br />
+
+          <select id="course" name="course" required 
+            style=" width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;"
+            >
+
+            <option value="">Select Course</option>
+            <option value="BSIT">BS Information Technology</option>
+            <option value="BSTM">BS Tourism Management</option>
+            <option value="BSED">Bachelor of Secondary Education</option>
+            <option value="BEED">Bachelor of Elementary Education</option>
+
+          </select>
+        </div>
+
+        <!-- Year Level -->
+        <div style="margin-top: 10px;font-size: large;">
+          <label style="font-weight: bold;">Year Level:</label>
+          <br />
+
+          <input
+            type="radio"
+            id="first"
+            name="yearlevel"
+            value="First Year"
+            required
+          />
+          <label for="first">First Year</label>
+
+          <br />
+
+          <input
+            type="radio"
+            id="second"
+            name="yearlevel"
+            value="Second Year"
+          />
+          <label for="second">Second Year</label>
+
+          <br />
+
+          <input type="radio" id="third" name="yearlevel" value="Third Year" />
+          <label for="third">Third Year</label>
+
+          <br />
+
+          <input
+            type="radio"
+            id="fourth"
+            name="yearlevel"
+            value="Fourth Year"
+          />
+          <label for="fourth">Fourth Year</label>
+        </div>
+
+        <!-- Skills or Interests -->
+        <div style="margin-top: 10px;font-size: large;">
+          <label style="font-weight: bold;">Skills or Interests:</label>
+          <br />
+
+          <input type="checkbox" id="html" name="skills" value="HTML" />
+          <label for="html">HTML</label>
+
+          <br />
+
+          <input type="checkbox" id="css" name="skills" value="CSS" />
+          <label for="css">CSS</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="javascript"
+            name="skills"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="graphic"
+            name="skills"
+            value="Graphic Design"
+          />
+          <label for="graphic">Graphic Design</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="networking"
+            name="skills"
+            value="Networking"
+          />
+          <label for="networking">Networking</label>
+        </div>
+
+        <!-- Address -->
+        <div style="margin-top: 10px;font-size: large;">
+          <label for="address" style="font-weight: bold">Address:</label>
+          <br />
+
+          <textarea
+            id="address"
+            name="address"
+            placeholder="Enter your address"
+            rows="4"
+            cols="40"
+          ></textarea>
+        </div>
+
+        <!-- Comments -->
+        <div style="margin-top: 10px;font-size: large;padding-bottom: 25px;">
+          <label for="comments" style="font-weight: bold">Comments or Expectations:</label>
+          <br />
+
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Enter your comments or expectations"
+            rows="4"
+            cols="40"
+          ></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <div style="display: flex; gap: 12px;border-top: #a31014 solid 2px; padding: 10px 0;">
+          <button type="submit" 
+        style="
+        flex: 1;
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"
+          >Submit Registration</button>
+          <button type="reset" 
+        style="
+        flex: 1;
+        width: 100%;
+        background-color: #c42b26;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"
+          >Clear Form</button>
+          <button type="button" style="
+        flex: 1;  
+        width: 100%;
+        background-color: #1749d1;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;">View Requirements</button>
+        </div>
+      </form>
+    </div>
+    </div>
+
+    <!-- Student List div -->
+    <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
+    <div id="students" style="  
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;">
+
+    <div style="text-align: center; border-bottom: #a31014 solid 2px;font-size: larger;">
+      <h2 style="font-weight: bold;margin-bottom: -10px;margin-top:  5px;">Student List</h2>
+
+      <p>Below are sample registered student records.</p>
+    </div>
+      <table border="1"  
+      style="margin: 10px auto;
+      border-collapse: collapse;
+      width: 100%;">
+     
+        
+        <thead>
+        <tr>
+        <th colspan="5">Registered Student Records</th>
+        </tr>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Student Number</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Full Name</th>
+            <th style="text-align: left;
+  padding: 8px; background-color: #a31014;
+  color: white;">Course</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Year Level</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">2026-0001</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Juan Jael Dela Cruz</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">BSIT</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">First Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Registered</td>
+          </tr>
+
+          <tr>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">2026-0002</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Maria Santos Jonathan</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">BSTM</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Second Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Registered</td>
+          </tr>
+
+          <tr>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">2026-0003</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Pedro Reyes</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">BSED</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Third Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Registered</td>
+          </tr>
+
+          <tr>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">2026-0004</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Anna Garcia</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">BEED</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Fourth Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: #f2f2f2">Registered</td>
+          </tr>
+
+          <tr>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">2026-0005</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Jael Camocamo</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">BSIT</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Second Year</td>
+            <td style="text-align: left;
+  padding: 8px;background-color: white">Registered</td>
+  
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+    
+    <!-- Enrollment Summary div -->
+    <div style="max-width: 900px; margin: 25px auto; padding: 0 15px;">
+    <div id="enrollment_sum" style="  
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;">
+    <div style="text-align: center; border-bottom: #a31014 solid 2px;font-size: larger;">
+      <h2 style="font-weight: bold;margin-bottom: -10px;margin-top:  5px;">Enrollment Summary</h2>
+
+      <p>Below is the sample enrollment information.</p>
+    </div>
+
+      <table border="1"
+      style="margin: 10px auto;
+      border-collapse: collapse;
+      width: 100%;"
+      >
+
+        <thead>
+          
+        <tr>
+        <th colspan="3">Student Enrollment Summary</th>
+        </tr>
+          <tr>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Course</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Number of Students</th>
+            <th style="text-align: left;
+  padding: 8px;background-color: #a31014;
+  color: white;">Enrollment Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+    <tr>
+        <td style="text-align: left; padding: 8px; background-color: white;">
+            BSIT
+        </td>
+
+        <td style="text-align: left; padding: 8px; background-color: white;">
+            35
+        </td>
+
+        <td rowspan="3" style="text-align: center; padding: 8px; background-color: white;">
+            Open
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align: left; padding: 8px; background-color: #f2f2f2;">
+            BSTM
+        </td>
+
+        <td style="text-align: left; padding: 8px; background-color: #f2f2f2;">
+            25
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align: left; padding: 8px; background-color: white;">
+            BSED
+        </td>
+
+        <td style="text-align: left; padding: 8px; background-color: white;">
+            30
+        </td>
+    </tr>
+</tbody>
+      </table>
+    </div>
+    </div>
+
+    <!-- Contact div -->
+    <div id="contact" style="background-color: white;padding: 20px;margin-top: 25px ;border-top-left-radius: 20px;border-top-right-radius: 20px;">
+        <div style="text-align: center; margin: 5px 0;">
+      <h2 style="color: #a31014;">Contact Us</h2>
+
+      <p>
+        For questions about registration, contact the MOIST Student Registration
+        Office.
+      </p>
+
+      <p>Email: registration@moist.edu.ph</p>
+
+      <p>Phone: (088) 123-4567</p>
+    </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer style="background-color: white;padding: 2px;margin: 0;border-top:rgb(192, 188, 188) solid 1px ;">
+      <p style="text-align: center;color: rgb(73, 71, 71);">&copy; 2026 MOIST Student Registration System. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
